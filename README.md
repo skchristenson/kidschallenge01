@@ -19,3 +19,6 @@ I was going to add more details on each personality but haven't yet.
 
 Left panel actions:
 Lists out new challeges with links to external websites
+
+Themes:
+Used ThemeRoller with 3 swatches to demonstrate that I can add new themes to my web application.
