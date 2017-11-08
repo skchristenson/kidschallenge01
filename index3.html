@@ -1,0 +1,314 @@
+<!--
+Programmer: Sarah Christenson
+Date: 11/4/17
+Purpose: Mod 5 Course Project - add ThemeRoller swatches
+Criteria: jQuery Mobile(mod5/index3.html)
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kid's Challenge</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="styles/custom5.css" rel="stylesheet" type="text/css">
+
+<!--add links from ThemeRoller-->
+<link rel="stylesheet" href="themes/Mod5CourseProject.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script
+
+</head>
+<body>
+<div id="page" data-role="page" data-theme="a" data-add-back-btn="true">
+<!--create panel for new challenges-->
+	<div data-role="panel" id="myPanel" data-theme="b">
+	<img src="images/lightbulb.png" width="225" height="75" alt=""/>
+		<h2>Today's New Challenges!</h2>
+		<ul data-role="listview" data-theme="c">
+			<li class="menu"><a href="https://theinspiredtreehouse.com/balance-beam-activities-for-kids-movement-and-learning/">Balance Beam</a></li>
+			<li class="menu"><a href="https://gmb.io/cartwheel/">Cartwheels</a></li>
+			<li class="menu"><a href="http://club.chicacircle.com/minute-it-to-win-it-tween-challenge/">Stack Attack</a></li>
+			</ul>
+			<p>Click on the challenges to be redirected to another website with more information.</p>
+			<a href="#my-header" class="ui-btn ui-btn-inline" data-rel="close">Close</a>
+		</div>
+
+<!--create main page-->
+	<div data-role="header" data-theme="a">
+	  <div class="logo"><img src="images/kidgroup.png" width="320" height="125" alt=""/></div>
+	</div>
+
+  <div data-role="header">
+    <h1>Kid's Challenge</h1>
+		<a href="#myPanel" class="ui-btn ui-btn-inline">New!</a>
+  </div>
+
+	<div data-role="content">
+		<ul id="myUL">
+			<li><a href="#section1" data-transition="flip">Home</a></li>
+			<li><a href="#section2" data-transition="flip">Challenges</a></li>
+			<li><a href="#form" data-transition="flip">Sign Up!</a></li>
+			<li><a href="#section4" data-transition="flip">Favorites</a></li>
+			<li><a href="#section5" data-transition="flip">Personalities</a></li>
+		</ul>
+	</div>
+	<div data-role="footer" data-theme="a">
+	  <h4>schristenson &copy; 2017 </h4>
+	</div>
+</div>
+//SECTION 1 HOME
+
+<div id="section1" data-role="page" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a" data-add-back-btn="true">
+		<div class="logo"><img src="images/kidgroupside2.png" width="320" height="125" alt=""/></div>
+	  <h1>Home</h1>
+	</div>
+	<div data-role="content">
+	  <h3>Keep them Active</h3>
+	  <p>Introducing a way to reduce screen-time and encourage physical activities by using a app that offers challenges! Each challenge has a certified adult assigned to monitor the child's activity.<p>
+	  	  
+	  <h3>Healthy lifestyle tips!</h3>
+	  <ul>
+		<li>Food</li>
+		<li>Activities</li>
+		<li>Sleep</li>
+		<li>Stress Management</li>
+	  </ul>
+</a>
+	</div>
+	<div data-role="footer" data-theme="a">
+	  <h4>schristenson &copy; 2017 </h4>
+	</div>
+</div>
+
+//SECTION 2 PICK A CHALLENGE
+<div id="section2" data-role="page" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a" data-add-back-btn="true">
+	
+	<div class="logo"><img src="images/kidgroupside.png" width="320" height="125" alt=""/></div>
+	  <h1>Challenges!</h1>
+	  <ul data-role="listview" data-theme="c" data-filter="true">
+	<!--<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Pick a challenge..." title="Type in Activity">
+<ul id="myUL">-->
+  <li><a href="#">Baseball</a></li>
+  <li><a href="#">Basketball</a></li>
+  <li><a href="#">Biking</a></li>
+  
+  <li><a href="#">Dance</a></li>
+  
+  <li><a href="#">Football</a></li>
+  
+  <li><a href="#">Golf</a></li>
+  <li><a href="#">Gymnastics</a></li>
+  
+  <li><a href="#">Hockey</a></li>
+  <li><a href="#">Hula Hoop</a></li>
+  
+  <li><a href="#">Jump Rope</a></li>
+  
+  <li><a href="#">Nerf Gun</a></li>
+  
+  <li><a href="#">Obstacle Course</a></li>
+  
+  <li><a href="#">Pet</a></li>
+   
+  <li><a href="#">Running</a></li>
+  
+  <li><a href="#">Skateboard</a></li>
+  <li><a href="#">Sledding</a></li>
+  <li><a href="#">Slime</a></li>
+  <li><a href="#">Soccer</a></li>
+  
+  <li><a href="#">Tennis</a></li>
+  <li><a href="#">Trampoline</a></li>
+  
+  <li><a href="#">Walking</a></li>
+    
+  <li><a href="#">Yoga</a></li>
+  
+    </ul>
+	</div>
+	<div data-role="footer" data-theme="a">
+		<h4>schristenson &copy; 2017 </h4>
+	</div>
+</div>
+
+//FORM SIGN UP
+<div data-role="page" id="form" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="b" data-add-back-btn="true">
+    <h1>Sign Up!</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+
+</div>
+	<form action="index3.html" method="post">
+		<div class = "ui-field-contain">
+			<label for="firstname"> First Name:</label>
+			<input type = "text" firstname = "firstname" id="firstname" value="" data-clear-btn="true"/>
+		</div>
+		<div class = "ui-field-contain">
+			<label for="lastname"> Last Name:</label>
+			<input type = "text" firstname = "lastname" id="lastname" value="" data-clear-btn="true"/>
+		</div>
+		<div class = "ui-field-contain">
+			<label for="email"> Email:</label>
+			<input type = "text" name = "email" id="email" value="" data-clear-btn="true"/>
+		</div>
+		<label for="slider-flip-m">Any medical conditions?</label>
+		<select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true">
+			<option value="off">No</option>
+			<option value="on" selected= "">Yes</option>
+		</select>
+		<fieldset data-role="controlgroup">
+			<legend>Checkmark conditions</legend>
+			<input type="checkbox" name="checkbox-1a" id="checkbox-1a">
+			<label for="checkbox-1a">Asthma</label>
+			<input type="checkbox" name="checkbox-2a" id="checkbox-2a">
+			<label for="checkbox-2a">Diabetes</label>
+			<input type="checkbox" name="checkbox-3a" id="checkbox-3a">
+			<label for="checkbox-3a">Heart Disease</label>
+		</fieldset>				
+		<div class = "ui-field-contain">
+			<input type="submit" name="submit" value="Submit" />
+		</div>
+		 <div data-role="content">
+</div>
+	<div data-role="footer">
+		<h4>schristenson &copy; 2017 </h4>
+	</div>
+</div>
+
+//SECTION 4 favorites
+<div data-role="page" id="section4" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="c" data-add-back-btn="true">
+  <div class="logo"><img src="images/ranks.png" width="320" height="125" alt=""/></div>
+    <h1>Favorites!</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+</div>
+	<form action="index3.html" method="post">
+		<div class = "ui-field-contain">
+		<p>Rank your challenges!</p>
+		<p>Type in the name of the challenges in the boxes below</p> 
+	</div>
+	
+	<form action="index3.html" method="post">
+		<div class = "ui-field-contain">
+		<textarea class="localstorage" placeholder="Best Challenge" autofocus></textarea>
+		<textarea class="localstorage" placeholder="Ok Challenge" autofocus></textarea>
+		<textarea class="localstorage" placeholder="Worst Challenge" autofocus></textarea>
+		<div class = "ui-field-contain">
+		<input type="submit" name="submit" value="Submit" />
+<button class="clear">Clear</button>
+	</form>
+		</div>
+</div>
+	<div data-role="footer" data-theme="a" >
+	  <h4>schristenson &copy; 2017 </h4>
+	</div>
+</div>
+	
+//SECTION 5 - add grid for personality types
+
+<div data-role="page" id="section5" data-theme="a" data-add-back-btn="true">
+<div data-role="header" data-theme="a" data-add-back-btn="true">
+	<h1>Personalities</h1>
+</div>
+	<div data-role="content" data-add-back-btn="true">
+	<div class="ui-grid-c" data-add-back-btn="true">
+	<div class="ui-block-a">
+			<p>Funny</p>
+			<img src = "images/funny.png" height="45" width ="45">
+	</div>
+	<div class="ui-block-b">
+			<p>Sensitive</p>
+			<img src = "images/sensitiveemoji.PNG" height="45" width ="45">
+	</div>
+	<div class="ui-block-c">
+			<p>Serious</p>
+			<img src = "images/seriousemoji.PNG" height="45" width ="45">
+	</div>
+	
+	<div class="ui-block-d">
+		<p>Direct</p>
+			<img src = "images/determinedemoji.PNG" height="45" width ="45">
+	</div>
+</div><!-- /grid-a -->
+
+</div>
+	<div data-role="footer" data-theme="a" >
+	  <h4>schristenson &copy; 2017 </h4>
+	</div>
+</div>
+	<div data-role="footer">
+		<h4>schristenson &copy; 2017 </h4>
+	</div>
+
+//SECTION 6
+<div id="section6" data-role="page" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a" data-add-back-btn="true">
+		<h1>Section 6</h1>
+	</div>
+	<div data-role="content">
+	<p>content</p>
+	</div>
+	<div data-role="footer" data-theme="a" >
+	  <h4>schristenson &copy; 2017 </h4>
+	</div>
+<script>
+(function() {
+var rasm = document.querySelector('.localstorage');
+function supportsLocalStorage() {
+return typeof(Storage)!== 'undefined';
+}
+if (!supportsLocalStorage()) {
+rasm.value = 'Your browser does not support localStorage.';
+} else {
+try {
+setInterval(function() {
+localStorage.setItem('autosave', rasm.value);
+}, 1000);
+} catch (e) {
+if (e == QUOTA_EXCEEDED_ERR) {
+alert('Quota exceeded!');
+}
+}
+if (localStorage.getItem('autosave')) {
+rasm.value = localStorage.getItem('autosave');
+}
+document.querySelector('.clear').onclick = function() {
+rasm.value = '';
+localStorage.removeItem('autosave');
+};
+document.querySelector('.empty').onclick = function() {
+rasm.value = '';
+localStorage.clear();
+};
+}
+})();
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+</div>
+	<div data-role="footer">
+		<h4>schristenson &copy; 2017 </h4>
+	</div>
+	
+</div>
+</body>
+</html>
